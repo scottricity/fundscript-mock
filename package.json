@@ -1,0 +1,49 @@
+{
+  "name": "fundscript-mock",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "@mui/system": "^5.10.14",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/styled-engine-sc": "^5.10.14",
+    "styled-components": "^5.3.6",
+    "@mui/material": "^5.10.14",
+    "@mui/icons-material": "^5.10.14",
+    "@fontsource/roboto": "^4.5.8"
+  },
+  "main": "public/electron.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron .",
+    "build": "craco build",
+    "dev": "concurrently \"npm run build && npm start\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^21.3.0",
+    "webpack-node-externals": "^3.0.0",
+    "concurrently": "^7.5.0"
+  }
+}
